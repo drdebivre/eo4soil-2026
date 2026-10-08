@@ -14,4 +14,4 @@ To regenerate the preview from the final PDF:
 1. Create a public repository, for example `eo4soil-2026-poster`.
 2. Upload these files to the root of the `main` branch.
 3. Go to Settings → Pages → Build and deployment, set Source to "Deploy from a branch", and choose `main` and `/ (root)`.
-4. The page will be at `https://<username>.github.io/eo4soil-2026-poster/`. Keep that address the same after printing.
+4. The page will be at `https://drdebivre.github.io/eo4soil-2026-poster/`. Keep that address the same after printing.
