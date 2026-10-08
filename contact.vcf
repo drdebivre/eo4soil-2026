@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:[Surname];Dries;;;
+FN:Dries [Surname]
+ORG:UCLouvain;Geomatics
+TITLE:[Position]
+EMAIL;TYPE=INTERNET,WORK:dries.debievre@uclouvain.be
+URL:https://orcid.org/0000-0000-0000-0000
+NOTE:Met at the 2nd EO4Soil Symposium (ESA-ESRIN, Nov 2026) - tillage detection poster
+END:VCARD
