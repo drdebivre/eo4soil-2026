@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tillage detection from Sentinel-1 · EO4Soil 2026 poster</title>
+<meta name="description" content="A transparent rule-based algorithm for tillage detection from Sentinel-1 time series. Poster presented at the 2nd ESA EO4Soil Symposium, 4–6 November 2026, ESA–ESRIN, Frascati.">
+<!-- Shown when the link is shared in chat apps / social media -->
+<meta property="og:title" content="A transparent rule-based algorithm for tillage detection from Sentinel-1 time series">
+<meta property="og:description" content="Poster · 2nd EO4Soil Symposium · 4–6 Nov 2026 · ESA–ESRIN, Frascati">
+<meta property="og:image" content="poster-preview.jpg">
+<style>
+  :root {
+    --navy: #0b2e4a;
+    --green: #5e8b3a;
+    --ink: #1e2428;
+    --muted: #5f686e;
+    --panel: #f3f5f2;
+    --line: #dde2dd;
+    --bg: #ffffff;
+    --card: #ffffff;
+    --link: #1d5c8c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --navy: #9cc3e4;
+      --green: #9cc77a;
+      --ink: #e6e9e7;
+      --muted: #a3acb1;
+      --panel: #1a2228;
+      --line: #2e3a42;
+      --bg: #11171c;
+      --card: #172027;
+      --link: #9cc3e4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  a { color: var(--link); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header { border-top: 6px solid #0b2e4a; padding: 32px 0 8px; }
+  .event { color: var(--muted); font-size: 14px; letter-spacing: .02em; text-transform: uppercase; margin: 0 0 12px; }
+  h1 { color: var(--navy); font-size: clamp(26px, 5vw, 40px); line-height: 1.15; margin: 0 0 14px; text-wrap: balance; }
+  .authors { margin: 0; font-weight: 600; }
+  .affil { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 10px 18px;
+    border-radius: 10px; font-weight: 600; text-decoration: none; border: 1px solid var(--line);
+    color: var(--ink); background: var(--card);
+  }
+  .btn.primary { background: #0b2e4a; border-color: #0b2e4a; color: #fff; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  main { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; padding: 20px 0 40px; }
+  @media (max-width: 760px) { main { grid-template-columns: 1fr; } }
+  .poster { display: block; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+  .poster img { display: block; width: 100%; height: auto; }
+  .caption { color: var(--muted); font-size: 14px; margin: 8px 2px 0; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--green); margin: 0 0 10px; }
+  .card { background: var(--panel); border-radius: 12px; padding: 20px; }
+  .contact-name { font-weight: 700; font-size: 19px; margin: 0; }
+  .contact-role { color: var(--muted); margin: 0 0 14px; font-size: 15px; }
+  dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 16px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; overflow-wrap: anywhere; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; padding: 18px 0 32px; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <p class="event">2nd EO4Soil Symposium · 4–6 November 2026 · ESA–ESRIN, Frascati (Rome)</p>
+  <h1>A transparent rule-based algorithm for tillage detection from Sentinel-1 time series</h1>
+  <p class="authors">Dries De Bièvre, Louis Descarpentries, Sophie Bontemps, Pierre Defourny, Bas van Wesemael</p>
+  <p class="affil">UCLouvain, Earth &amp; Life Institute, Louvain-la-Neuve, Belgium</p>
+
+  <div class="actions">
+    <a class="btn primary" href="poster.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Download poster (PDF)
+    </a>
+    <a class="btn" href="mailto:dries.debievre@uclouvain.be?subject=EO4Soil%202026%20%E2%80%93%20tillage%20detection%20poster">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      Email me
+    </a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div>
+    <a class="poster" href="poster.pdf" aria-label="Open the poster PDF">
+      <img src="poster-preview.jpg" alt="Preview of the A0 poster" width="994" height="1405">
+    </a>
+    <p class="caption">Tap the poster to open the full-resolution PDF.</p>
+  </div>
+
+  <div>
+    <h2>Contact</h2>
+    <div class="card">
+      <p class="contact-name">Dries De Bièvre</p>
+      <p class="contact-role">PhD Candidate · UCLouvain</p>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:dries.debievre@uclouvain.be">dries.debievre@uclouvain.be</a></dd>
+      </dl>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap">
+  Poster presented at the 2nd ESA Symposium on Earth Observation for Soil Protection and Restoration.
+</footer>
+</body>
+</html>
